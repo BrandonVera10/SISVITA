@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#018FAF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backgroundgreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="370dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="#018FAF"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundTint="#00BCD4"
+            android:foregroundTintMode="src_atop"
+            android:text="Evaluar Test"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button13"
+            app:layout_constraintStart_toStartOf="@+id/button13"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="54dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="#018EAE"
+            android:text="←"
+            android:textAlignment="center"
+            android:textColor="#FEFEFE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/guideline2"
+            app:layout_constraintEnd_toStartOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            tools:layout_editor_absoluteY="2dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button13">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="1. Me siento calmado."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="2. Me siento seguro."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="3. Estoy tenso."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="4. Estoy a gusto."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="5. Me siento alterado."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="6. Estoy preocupado por posibles desgracias."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="7. Me siento descansado."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="8. Me siento ansioso."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="9. Me siento cómodo."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="10. Me siento confiado."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="11. Me siento nervioso."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="12. Me siento agitado."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="13. Me siento inquieto."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="15. Estoy preocupado."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="14. Me siento satisfecho."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="16. Me siento inquieto."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#DDDDDE"
+                        android:text="17. Me siento inquieto por dentro."
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="2" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="3" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#DCDCDD"
+                            android:buttonTint="#000000"
+                            android:text="4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#DDDDDE"
+                    android:text="18. Me siento a gusto."
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#DCDCDD"
+                        android:buttonTint="#000000"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#DCDCDD"
+                        android:buttonTint="#000000"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#DCDCDD"
+                        android:buttonTint="#000000"
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="#DCDCDD"
+                        android:buttonTint="#000000"
+                        android:text="4" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#018EAE"
+                    android:text="Enviar test"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
